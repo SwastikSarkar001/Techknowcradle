@@ -19,8 +19,8 @@ export default function ContactUs() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#contact-section',
-        start: 'top 25%',
-        end: 'bottom 25%',
+        start: 'top 35%',
+        end: 'bottom 35%',
         toggleActions: 'play reverse play reverse',
         // markers: true
       }

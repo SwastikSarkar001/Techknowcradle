@@ -30,7 +30,7 @@
 }
 #location p {
     font-size: 1.2rem;
-    transform: translateY(5rem);
+    transform: translateY(6rem);
     transition: transform .1s;
 }
 iframe {

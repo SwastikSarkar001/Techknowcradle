@@ -16,9 +16,7 @@ function Home() {
 
     const mainContent = mainContentRef.current
     new SplitType(mainContent)
-
-    // const contents = gsap.utils.toArray('#contacts > *')
-
+    
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#home-section',
@@ -28,20 +26,25 @@ function Home() {
         // markers: true
       }
     });
-
+    // const contents = gsap.utils.toArray('#contacts > *')
     tl.to('#text > h1 .char', {
       y: 0,
       stagger: 0.05,
       duration: 1,
       ease: 'elastic'
     })
-  }, [])
-  return (
+    window.onload = () => {
+      console.log('Home loaded')
 
+    }
+  }, [])
+
+  return (
     <section id="home-section" className='sections'>
       <div id='text'>
         <h1 ref={mainContentRef}>Techknowcradle</h1>
         <h3>Where Wonder Meets Knowledge: Empowering Young Minds Through Hands-On Science!</h3>
+        <h3>Join us from 12th March to 14th March</h3>
       </div>
       <RegisterButton isBig={true} />
       {/* <img src={mainSectionImage} alt="Home Section" className='section-images' /> */}

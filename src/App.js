@@ -5,9 +5,7 @@ import HomePage from './components/HomePage'
 import Register from './components/Register'
 import RegisterSuccess from './components/RegisterSuccess';
 
-
 import './App.css';
-// import './css/Navbar.css';
 
 function App() {
   return (
