@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../css/Navbar.css'
 import { HashLink as Link } from 'react-router-hash-link';
 
-function Navbar(props) {
+function Navbar() {
   useEffect(() => {
     const sections = document.querySelectorAll('.sections')
     const options = document.querySelectorAll('li.options')
@@ -34,10 +34,6 @@ function Navbar(props) {
     <nav id="navbar">
       <a href='/' id="title">Techknowcradle</a>
       <ul className="navbar-main-options">
-        {/* <li id='home-option' className="options" onClick={homeClickable} >Home</li>
-        <li id='events-option' className="options" onClick={eventsClickable} >Events</li>
-        <li id='location-option' className="options" onClick={locationClickable} >Location</li>
-        <li id='contact-us-option' className="options" onClick={contactUsClickable} >Contact Us</li> */}
         <Link style={{textDecoration: 'none'}} smooth to='/#home-section'><li id='home-option' className="options">Home</li></Link>
         <Link style={{textDecoration: 'none'}} smooth to='/#events-section'><li id='events-option' className="options">Events</li></Link>
         <Link style={{textDecoration: 'none'}} smooth to='/#location-section'><li id='location-option' className="options">Location</li></Link>
