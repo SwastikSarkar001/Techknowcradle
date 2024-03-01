@@ -1,0 +1,41 @@
+#location-section {
+    align-items: center;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    background: url('../img/location-section.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #bbb;
+    background-blend-mode: multiply;
+    padding: 0 5rem;
+}
+
+#location-section > div > h1 {
+    margin-bottom: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#location-section > div > h1 .char {
+    font-size: 4rem;
+    text-shadow: 2px 3px 6px #000;
+    font-family: basteleur-bold;
+    transform: translateY(5rem);
+    transition: transform .1s;
+}
+#location {
+    text-shadow: 1px 2px 2px #000;
+}
+#location > div {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+#location p {
+    font-size: 1.2rem;
+    transform: translateY(5rem);
+    transition: transform .1s;
+}
+iframe {
+    width: 40vw;
+    aspect-ratio: 3/2;
+    border: none;
+    border-radius: 16px;
+}

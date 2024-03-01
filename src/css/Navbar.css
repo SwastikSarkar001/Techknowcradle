@@ -1,0 +1,55 @@
+nav#navbar {
+    padding: 0.5rem 5rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, black, transparent 90%);
+}
+nav#navbar * {
+    color: #fff;
+    /* mix-blend-mode: difference; */
+}
+#title {
+    font-size: 1.75rem;
+    font-family: basteleur-bold, "Spinnaker", "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px #000;
+    text-decoration: none;
+}
+.navbar-main-options {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.options {
+    font-family: Rubik, sans-serif;
+    font-size: 1.25rem;
+    padding: 1rem 1rem;
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #000;
+}
+.options::after {
+    content: "";
+    position: absolute;
+    /* background: linear-gradient(to bottom, transparent 95%, #fff); */
+    background: #fff;
+    width: 0;
+    bottom: 10px;
+    height: 2px;
+    border-radius: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.options:hover::after {
+    width: 90%;
+}

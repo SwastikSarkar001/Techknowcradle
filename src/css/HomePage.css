@@ -1,0 +1,37 @@
+/* #home-page {
+
+} */
+
+.sections {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+.sections > h1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.sections > h1 .char {
+    font-size: 4rem;
+    text-shadow: 2px 3px 6px #000;
+    font-family: basteleur-bold;
+    transform: translateY(5rem);
+    transition: transform .1s;
+}
+
+.section-images {
+    width: inherit;
+    /* height: inherit; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

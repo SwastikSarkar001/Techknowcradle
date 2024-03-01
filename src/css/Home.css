@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'basteleur-bold';
+    src: local('Basteleur-Bold'), url(../fonts/Basteleur-Bold.woff) format('woff');
+}
+
+#home-section {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    padding-left: 3rem;
+    background: url('../img/home-section.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-color: #999;
+    background-blend-mode: multiply;
+    /* background-color: hsl(210, 2%, 12%); */
+    /* background-blend-mode: color-dodge; */
+}
+#text {
+    color: #eee;
+}
+
+#text > h1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#text>h1 .char {
+    font-size: 5rem;
+    text-shadow: 2px 3px 6px #000;
+    font-family: basteleur-bold;
+    transform: translateY(6rem);
+    transition: transform .1s;
+}
+#text>h3 {
+    font-weight: normal;
+    text-shadow: 3px 3px 4px #000;
+    font-family: Rubik, sans-serif;
+    font-size: 2rem;
+    max-width: 50vw;
+}
