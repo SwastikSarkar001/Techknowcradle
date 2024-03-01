@@ -50,6 +50,6 @@ nav#navbar * {
     z-index: -1;
     transition: all 0.2s ease-in-out;
 }
-.options:hover::after {
+.options.active::after {
     width: 90%;
 }
