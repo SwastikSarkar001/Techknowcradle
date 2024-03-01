@@ -38,7 +38,7 @@ function Home() {
   }, [])
   return (
 
-    <section id="home-section">
+    <section id="home-section" className='sections'>
       <div id='text'>
         <h1 ref={mainContentRef}>Techknowcradle</h1>
         <h3>Where Wonder Meets Knowledge: Empowering Young Minds Through Hands-On Science!</h3>
