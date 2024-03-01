@@ -32,7 +32,7 @@ function Navbar(props) {
 
   return (
     <nav id="navbar">
-      <a href='/' id="title">Techknowcradle.com</a>
+      <a href='/' id="title">Techknowcradle</a>
       <ul className="navbar-main-options">
         {/* <li id='home-option' className="options" onClick={homeClickable} >Home</li>
         <li id='events-option' className="options" onClick={eventsClickable} >Events</li>
