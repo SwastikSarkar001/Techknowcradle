@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import '../css/Navbar.css';
+import '../css/Navbar.css'
 import { HashLink as Link } from 'react-router-hash-link';
 
 function Navbar(props) {
