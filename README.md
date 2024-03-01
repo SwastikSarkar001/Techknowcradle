@@ -28,9 +28,7 @@ Welcome to Techknowcradle, where innovation meets inspiration! Our event is a vi
 ### **Registration Form**
 ![First Page](https://i.ibb.co/QJdY15w/Register-Form-1.png)
 
-
 ![Mid Page](https://i.ibb.co/3sBVXrY/Register-Form-2.png)
-
 
 ![Acknowledgement of Terms](https://i.ibb.co/yFL3f9b/Register-Form-3.png)
 
