@@ -39,16 +39,15 @@ nav#navbar * {
 .options::after {
     content: "";
     position: absolute;
-    /* background: linear-gradient(to bottom, transparent 95%, #fff); */
     background: #fff;
     width: 0;
     bottom: 10px;
     height: 2px;
-    border-radius: 15px;
+    border-radius: 24px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 .options.active::after {
     width: 90%;

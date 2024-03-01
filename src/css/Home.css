@@ -35,3 +35,7 @@
     font-size: 2rem;
     max-width: 50vw;
 }
+#text>h3:last-of-type {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}

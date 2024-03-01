@@ -28,12 +28,12 @@
 }
 
 #contacts > div > *:first-of-type {
-    transform: translateY(3rem);
+    transform: translateY(4rem);
     transition: transform .1s;
 }
 
 #contacts > div > *:not(:first-of-type) {
-    transform: translateY(5rem);
+    transform: translateY(4rem);
     transition: transform .1s;
 }
 
