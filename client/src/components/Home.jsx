@@ -33,10 +33,7 @@ function Home() {
       duration: 1,
       ease: 'elastic'
     })
-    window.onload = () => {
-      console.log('Home loaded')
-
-    }
+    // window.onload = () => {}
   }, [])
 
   return (
@@ -48,7 +45,7 @@ function Home() {
       </div>
       <RegisterButton isBig={true} />
       {/* <img src={mainSectionImage} alt="Home Section" className='section-images' /> */}
-    </section>
+    </section> 
   );
 }
 

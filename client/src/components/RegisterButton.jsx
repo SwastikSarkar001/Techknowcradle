@@ -21,9 +21,9 @@ function RegisterButton(props) {
   )
 }
 
-RegisterButton.defaultProps = {
-  isBig: false
-}
+// RegisterButton.defaultProps = {
+//   isBig: false
+// }
 
 RegisterButton.propTypes = {
   isBig: PropTypes.bool.isRequired,

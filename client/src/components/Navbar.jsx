@@ -4,29 +4,32 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function Navbar() {
   useEffect(() => {
-    const sections = document.querySelectorAll('.sections')
-    const options = document.querySelectorAll('li.options')
+    // window.onload = () => {
+
+      const sections = document.querySelectorAll('.sections')
+      const options = document.querySelectorAll('li.options')
 
 
-    const setActiveClass = (section, option) => {
-      if (section.getBoundingClientRect().top <= 70 && section.getBoundingClientRect().bottom >= 70) {
-        if (option.className === "options")
-          option.className = "options active";
+      const setActiveClass = (section, option) => {
+        if (section.getBoundingClientRect().top <= 70 && section.getBoundingClientRect().bottom >= 70) {
+          if (option.className === "options")
+            option.className = "options active";
+        }
+        else {
+          if (option.className === "options active")
+            option.className = "options";
+        }
       }
-      else {
-        if (option.className === "options active")
-          option.className = "options";
-      }
-    }
-    for (let i = 0; i < options.length; i++) {
-      setActiveClass(sections[i], options[i]);
-    }
-
-    document.onscroll = () => {
-      for (let i = 0; i < sections.length; i++) {
+      for (let i = 0; i < options.length; i++) {
         setActiveClass(sections[i], options[i]);
       }
-    };
+
+      document.onscroll = () => {
+        for (let i = 0; i < sections.length; i++) {
+          setActiveClass(sections[i], options[i]);
+        }
+      };
+    // }
 
   }, [])
 

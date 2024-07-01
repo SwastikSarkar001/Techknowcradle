@@ -3,19 +3,15 @@ import PropTypes from 'prop-types'
 import { InputField, SelectField, TextareaField } from './FormWrapper'
 import { inputs, selects, textareas, options } from './FormInfo'
 
-function Label(props) {
+function Label({ label, required = false }) {
   return (
-    <> {props.label}{props.required && <span className='required'>*</span>} </>
+    <> {label}{required && <span className='required'>*</span>} </>
   )
-}
-
-Label.defaultProps = {
-  required: false
 }
 
 Label.propTypes = {
   label: PropTypes.string.isRequired,
-  required: PropTypes.bool.isRequired
+  required: PropTypes.bool
 }
 
 function FormOne(props) {

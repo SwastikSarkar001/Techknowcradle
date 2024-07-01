@@ -1,0 +1,35 @@
+main#loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    }
+
+main#loading > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#loading-svg {
+    width: 200px;
+}
+
+#loading-text {
+    text-align: center;
+    font-size: 1.5rem;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        scale: 0.8;
+    }
+    50% {
+        scale: 1.1;
+    }
+    to {
+        scale: 0.8;
+    }
+}
+

@@ -1,7 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import LoadingScreen from './LoadingScreen'
 import { FormOne, FormTwo, FormThree, FormFour, FormFive, FormSix } from './Forms'
 import { useNavigate } from 'react-router-dom';
 import '../css/Forms.css'
+import serverNotFoundPic from '../img/server-not-found.png'
+
+function ServerNotConnected() {
+  return (
+    <main id='not-found'>
+      <div id="not-found-container">
+        <img src={serverNotFoundPic} alt="Server Not Found Pic" />
+        <div>
+          <p>Looks like the server is down or unavailable</p>
+          <p>Reload the site and try again or contact the admin</p>
+        </div>
+      </div>
+    </main>
+  )
+}
 
 export default function Register() {
   const [data, setData] = useState({
@@ -38,11 +55,14 @@ export default function Register() {
   const { visible, content, steps, next, previous } = PageLoader([form1, form2, form3, form4, form5, form6])
   const navigate = useNavigate()
 
-  const formSubmit = async (e) => {
+  const formSubmit = (e) => {
     e.preventDefault()
-    // console.log(JSON.stringify(data))
     // console.log(data)
-    navigate('/register/success', { state: JSON.stringify(data) })
+    
+    const res = axios.post(import.meta.env.VITE_SERVER_URL+'/users/save', data)
+
+    // navigate('/register/success', { state: JSON.stringify(data) })
+    navigate('/register/success', { state: 'Data added successfully!' })
   }
   function isUnicodeSupported() {
     try {
@@ -95,7 +115,17 @@ export default function Register() {
   let nextBtn = (visible !== steps.length - 1) && (formValidate() ? <button type="button" onClick={next}>Next</button> : <button disabled title="Fill out the required fields in the form to continue">Next</button>)
   let submitBtn = visible === steps.length - 1 && <button type='submit'>Submit</button>
 
-  return (
+  const [isServerConnected, setIsServerConnected] = useState(undefined)
+
+  useEffect(() => {
+    axios.get(import.meta.env.VITE_SERVER_URL+'/server/status')
+      .then(res => res.status === 200 && setIsServerConnected(true))
+      .catch((e) => setIsServerConnected(false))
+  })
+
+  let regdiv = (isServerConnected === undefined) ? 
+    <LoadingScreen />:
+    (isServerConnected === true) ?
     <main id="register">
       <div id="form-element">
         <div id='stepCount'>Step {visible+1} of {steps.length}</div>
@@ -108,8 +138,10 @@ export default function Register() {
           </div>
         </form>
       </div>
-    </main>
-  )
+    </main> :
+    <ServerNotConnected />
+
+  return (regdiv)
 }
 
 function PageLoader(steps) {
