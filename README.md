@@ -1,8 +1,8 @@
 # Techknowcradle — Where Wonder Meets Knowledge!
 
-This project was created with **`React.js`** with **`Vite`**.
-Frontend deployed on **`Vercel`** and backend deployed on **`Render`**.
-Data stored in a secured **`MongoDB`** connection.
+This project was created with **`React.js`** with **`Vite`**.\
+Frontend deployed on **`Vercel`** and backend deployed on **`Render`**.\
+Data stored in a secured **`MongoDB`** connection.\
 **Website —** [https://techknowcradle.vercel.app](https://techknowcradle.vercel.app).
 
 ## About the project
