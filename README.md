@@ -1,6 +1,8 @@
 # Techknowcradle — Where Wonder Meets Knowledge!
 
-This project was created with **`React.js`** and deployed on **`Vercel`**.\
+This project was created with **`React.js`** with **`Vite`**.
+Frontend deployed on **`Vercel`** and backend deployed on **`Render`**.
+Data stored in a secured **`MongoDB`** connection.
 **Website —** [https://techknowcradle.vercel.app](https://techknowcradle.vercel.app).
 
 ## About the project
@@ -11,14 +13,12 @@ Welcome to Techknowcradle, where innovation meets inspiration! Our event is a vi
 
 1) Unique Registration Form for booking tickets.
 2) Events Section where events can be displayed easily.
-3) After registration data can be obtained either by Object or JSON format.
+3) After registration data is stored in a secured MongoDB database.
 
 ## Limitations and Future Upgrades
 
-1) Frontend only website. Backend will be made later.
-2) Preloader will be made soon.
-3) Some more performance optimisations required.
-4) Not mobile responsive. Only for large screens.
+1) Some more performance optimisations required.
+2) Not mobile responsive. Only for large screens.
 
 ## Screenshots
 
