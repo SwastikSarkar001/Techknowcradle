@@ -18,7 +18,7 @@ Welcome to Techknowcradle, where innovation meets inspiration! Our event is a vi
 ## Limitations and Future Upgrades
 
 1) Some more performance optimisations required.
-2) Not mobile responsive. Only for large screens.
+2) Not mobile responsive. Only for large screens. Tailwind implementation.
 
 ## Screenshots
 
