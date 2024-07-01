@@ -2,7 +2,7 @@
 
 This project was created with **`React.js`** with **`Vite`**.\
 Frontend deployed on **`Vercel`** and backend deployed on **`Render`**.\
-Data stored in a secured **`MongoDB`** connection.\
+Data stored in a secured **`MongoDB`** database.\
 **Website —** [https://techknowcradle.vercel.app](https://techknowcradle.vercel.app).
 
 ## About the project
